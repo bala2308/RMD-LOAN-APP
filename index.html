@@ -1,92 +1,53 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-  <title>RMD-FIN</title>
-  <link rel="icon" href="https://ibb.co/bmKCXhk">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-   
-</head>
+<html>
+ <head>
+    <link rel="styleSheet" href="google sheet.css">
+ </head>   
 <body>
-  <!-- Header Section -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="https://rmd-loan-app.vercel.app/">Loan form</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <!-- Hero Section -->
+      <div class="container">
+         <form method="post" action="https://script.google.com/macros/s/AKfycbxzbeex02FRMZMvnNz4GKU47EmQuLQSWAogB9JpEUTBgGnWCjmEioLlxI4CL6UnEPaA/exec" name="contact-form">
+
+        <h4>RMD LOAN FORM</h4>
+        <input type="number" name="AADHAAR-NUMBER"placeholder="Aathaar-number">
+        <input type="text" name="MEMBER-NAME"placeholder="Name">
+        <input type="number" name="PHONE-NUMBER"placeholder="Phone-number">
+        <input type="text" name="MEMBER-ADDRESS"placeholder="Address">
+        <input type="text" name="CENTER-NAME"placeholder="centerName">
+        <input type="date" name="LOAN-DATE"placeholder="date">
+
+        <input type="text" id="myInput"name="PRODUCT-TYPE"placeholder="PRODUCT-TYPE" list="optionsList">
+<datalist id="optionsList">
+
+  <option value="5K/10W"></option>
+  <option value="10K/21W"></option>
+  <option value="15K/30W"></option>
+  <option value="20K/40W"></option>
+  <option value="25K/50W"></option>
+</datalist>
+       
+<input type="text" id="day"  list="days"name="DAY-ORDER"placeholder="DAY-ORDER">
+<datalist id="days">
+ 
+  <option value="MONDAY">
+  <option value="TUESDAY">
+  <option value="WEDNESDAY">
+  <option value="THURSDAY">
+  <option value="FRIDAY">
+
+</datalist>
 
 
-  <style>
-    .container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
 
-.centered {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-img { 
-  width: 100%;
-  height:auto;
-  opacity: 0.1;
-}
-    </style>
-    
-    <div class="container">
-      <img src="logo.jpg" alt="Company Logo" style="width:100%;">
-      <div class="centered"><h1>RMD-FIN</h1><br>  <h2>Welcome to possible future</h2><br>    <p>Empowering financial inclusion for women.</p></div>
+        <label for="BRANCH">Choose a branch:</label>
+  <select name="BRANCH" id="BRANCH">
+    <option value="TENKASI">TENKASI</option>
+    <option value="SURANDAI">SURANDAI</option><BR><BR>
       
+        <input type="submit" value="submit" id="submit">
+    </form>
     </div>
-    
-  
-</div>
-  </div>
-  <hr>
+    <script src="google sheet.js"></script>
 
-
-  </section>
-  
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We provide affordable financial services to underserved communities.</p>
-  </section>
-  
-  <!-- Services Section -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-
-      <li>group loans</li>
-      <li>gold loans</li>
-      <li> vehicle loans</li>
-      <li>personal loans</li>
-  
-    </ul>
-  </section>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; [RMD-FIN] 2024</p>
-  </footer>
-  
-</body>
-</html>
-
-
-
+ </body>
+ </html>
+   
